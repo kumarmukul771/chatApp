@@ -1,0 +1,17 @@
+cd client
+create-react-app ./
+npm i --save react-router socket.io-client react-scroll-to-bottom react-emoji query-string
+npm i --save react-router-dom
+
+in root directory
+mkdir server
+cd server
+npm init -y
+npm i --save cors express socket.io nodemon
+
+//================================ query-string ======================================//
+const data=queryString.parse(location.search);
+
+url = http://localhost:3000/chat?name=Mukul&room=Decibell
+data = {name: "Mukul", room: "Decibell"}
+location.search = ?name=Mukul&room=Decibell
